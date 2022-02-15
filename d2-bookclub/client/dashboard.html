@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap"
+    />
+    <link rel="stylesheet" href="./styles/css/style.css" />
+    <title>Document</title>
+    <script src="./dashboard.js" defer></script>
+    <script src="./navigation.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="loader">
+        <img src="./assets/icons/loader.svg" alt="loader" />
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="heading">
+            <div class="navigation">
+              <ul class="navigation__sections">
+                <li id="all-books">Books</li>
+                <li id="all-authors">Authors</li>
+              </ul>
+              <div class="navigation__logo" id="logo">
+                <p>Book<span>Club</span></p>
+              </div>
+              <ul class="navigation__auth">
+                <li id="login-btn">Login</li>
+                <li id="signup-btn">Sign Up</li>
+                <li id="logout-btn">Log out</li>
+                <li id="dashboard">Dashboard</li>
+              </ul>
+            </div>
+        </div>
+        <div class="dashboard">
+            <h1 class="dashboard__heading">Dashboard</h1>
+            <ul class="dashboard__navigation" id="dashboard-navigation">
+                <li id="books-dash">Books</li>
+                <li id="authors-dash">Authors</li>
+                <li id="users-dash">Users</li>
+            </ul>
+            <div class="dashboard__table" id="dash-table"></div>
+        </div>
+    </div>
+</body>
+</html>
